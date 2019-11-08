@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import { connect } from 'react-redux';
 import {fetchSmurfs} from '../actions';
 import Card from './Card';
+import AddForm from './AddForm';
 
 const SmurfsList = (props) => {
     const {smurfs} = props;
@@ -13,6 +14,7 @@ const SmurfsList = (props) => {
     return (
         <div>
             <h1>hello smurfs</h1>
+            <AddForm />
             {smurfs.map((smurf => (
                 <Card key={smurf.id} smurf={smurf} />
             )))}
