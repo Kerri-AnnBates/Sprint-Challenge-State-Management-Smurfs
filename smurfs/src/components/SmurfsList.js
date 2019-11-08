@@ -6,6 +6,7 @@ import AddForm from './AddForm';
 
 const SmurfsList = (props) => {
     const {smurfs} = props;
+    
     // Fetch smurfs data on load.
     useEffect(() => {
         props.fetchSmurfs();
