@@ -58,3 +58,18 @@ input[type='submit']:hover {
   color: #442AAF;
   font-size: bold;
 }
+
+.loading {
+  background-color: rgba(43, 107, 228, 0.8);
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.adding-smurf {
+  background: #18C659; 
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  transition: ease 3s;
+}

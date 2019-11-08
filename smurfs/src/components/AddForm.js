@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { addSmurf } from '../actions';
 
 const AddForm = (props) => {
-    const { addSmurf } = props;
+    const { addSmurf, isAdding, smurfs } = props;
 
     const [value, setValue] = useState({
         name: '',
@@ -29,7 +29,7 @@ const AddForm = (props) => {
     }
 
     return (
-        <div>
+        <div className="form-container">
             <form onSubmit={(e) => handleSubmit(e)}>
                 <label htmlFor="name">Name: <input
                     type="text"
@@ -54,9 +54,16 @@ const AddForm = (props) => {
                 /></label>
                 <input type="submit" value="Add Smurf" />
             </form>
+            {isAdding ? (<p className="adding-smurf">Adding Smurf!</p>) : ''}
         </div>
     )
 }
 
-const mapStateToProps = (state) => ({});
+const mapStateToProps = (state) => {
+    return {
+        isAdding: state.isAdding,
+        smurfs: state.smurfs
+    }
+}
+
 export default connect(mapStateToProps, { addSmurf })(AddForm);
