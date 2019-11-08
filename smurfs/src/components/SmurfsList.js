@@ -6,15 +6,14 @@ import AddForm from './AddForm';
 
 const SmurfsList = (props) => {
     const {smurfs} = props;
-    
+
     // Fetch smurfs data on load.
     useEffect(() => {
         props.fetchSmurfs();
     }, [])
 
     return (
-        <div>
-            <h1>hello smurfs</h1>
+        <div className="smurfs-list">
             <AddForm />
             {smurfs.map((smurf => (
                 <Card key={smurf.id} smurf={smurf} />
