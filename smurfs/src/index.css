@@ -1,5 +1,75 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 30px;
   font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin: 0 0 5px;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid #FF740D;
+  margin: 5px;
+}
+
+input[type='submit'] {
+  background-color: #0AB7A5;
+  border: 2px solid #0AB7A5;
+  color: #fff;
+  font-size: 18;
+}
+
+input[type='submit']:hover {
+  cursor: pointer;
+  color: #0AB7A5;
+  background-color: #fff;
+}
+
+.card {
+  background-color: #BDD1F5;
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin: 20px auto;
+  color: #292929;
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  border-bottom: 2px dotted #442AAF;
+  padding-bottom: 5px;
+  color: #4F5A65;
+}
+
+.card span {
+  color: #442AAF;
+  font-size: bold;
+}
+
+.loading {
+  background-color: rgba(43, 107, 228, 0.8);
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.adding-smurf {
+  background: #18C659; 
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  transition: ease 3s;
 }
